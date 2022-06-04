@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Inocente</title>
+    <meta name="description" content="Realiza esta encuesta totalmente inofensiva y participa en un sorteo increíble para ganar un iPhone 17. PREMIO SEGURO!!!">
+    <!-- Primary Meta Tags -->
+    <title>Encuesta Inocente</title>
+    <meta name="title" content="Encuesta Inocente">
+    <meta name="description" content="Realiza esta encuesta totalmente inofensiva y participa en un sorteo increíble para ganar un iPhone 17. PREMIO SEGURO!!!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Encuesta Inocente">
+    <meta property="og:description" content="Realiza esta encuesta totalmente inofensiva y participa en un sorteo increíble para ganar un iPhone 17. PREMIO SEGURO!!!">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Encuesta Inocente">
+    <meta property="twitter:description" content="Realiza esta encuesta totalmente inofensiva y participa en un sorteo increíble para ganar un iPhone 17. PREMIO SEGURO!!!">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/header.gif" alt="emoticono vintage escuchando música">
+            <h1>Encuesta Inocente</h1>
+            <img src="img/header.gif" alt="emoticono vintage escuchando música">
+        </div>
+        <p>Realiza esta <b>encuesta totalmente inofensiva</b> y participa en un <b>sorteo increíble</b> para ganar un <b>iPhone 17</b>. <b>PREMIO SEGURO!!!</b></p>
+        <br>
+    </header>
+    <main>
+        <section>
+            <form action="/api/procesamiento-datos" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="type-name">Nombre</label>
+                    <input type="text" id="type-name" name="user-name" placeholder="Marina">
+
+                    <label for="type-surname">Apellidos</label>
+                    <input type="text" id="type-surname" name="user-surname" placeholder="Camacho Rivero">
+                </div>
+                
+                <div>
+                    <label for="type-email"><sup>*</sup>Email</label>
+                    <input type="email" id="type-email" name="user-email" placeholder="estonoesunaestafa@hotmail.com" size="62px" required>
+                </div>
+
+                <div>
+                    <label for="type-address"><sup>*</sup>Dirección postal</label>
+                    <input type="text" id="type-address" name="user-address" placeholder="Calle iPhone nº17" size="46px" required>
+                </div>
+
+                <div>
+                    <label for="city" id="city">Ciudad</label>
+                    <select name="select" id="select" multiple size="4">
+                        <option value="Madrid">Madrid</option>
+                        <option value="Malaga">Málaga</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="La Coruña" selected>La Coruña</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Valencia">Valencia</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="radiobutton-container" for="female">
+                        <input type="radio" id="female" name="gender" value="Mujer">
+                        Mujer
+                    </label>
+                    <label class="radiobutton-container" for="male">
+                        <input type="radio" id="male" name="gender" value="Hombre">
+                        Hombre
+                    </label>
+                </div>
+
+                <div>
+                    <label for="datetime-local" multiple><sup>*</sup>Próximo día y hora estimados en los que no habrá nadie en su casa<a id="sup" href="#scam-justification"><sup>1</sup></a></label>
+                    <input type="datetime-local" id="datetime-local" name="datetime-local" min="2022-06-02T00:00"
+                    max="2022-12-31T23:59" required>
+                </div>
+                
+
+                <div class="card">
+                    <label for="file"><sup>*</sup>Cara delantera tarjeta crédito<a id="sup" href="#scam-justification"><sup>1</sup></a></label>
+                    <input type="file" id="card-front" name="card-front" accept=".png, .jpeg" required>
+                </div>
+                
+                <div class="card">
+                    <label for="file"><sup>*</sup>Cara trasera tarjeta crédito<a id="sup" href="#scam-justification"><sup>1</sup></a></label>
+                    <input type="file" id="card-back" name="card-back" accept=".png, .jpeg" required>
+                </div>
+                
+                <div>
+                    <label for="privacy">
+                        <input type="checkbox" id="accept" name="accept" required>
+                        <sup>*</sup>Acepto la política de privacidad.
+                    </label>
+                </div>
+
+                <div>
+                    <label for="scam">
+                        <input type="checkbox" id="accept" name="accept" disabled checked>
+                        <sup>*</sup>Acepto que <span>todos</span> mis datos sean utilizados para <span>lo que sea</span> que el propietario de la web considere oportuno.<a id="sup" href="#scam-justification"><sup>2</sup></a>
+                    </label>
+                </div>
+                
+                <div>
+                    <textarea name="textarea" id="textarea" cols="100" rows="10">Cualquier otro dato de interés (sueldo neto anual, horario de trabajo, contraseñas que suela usar en webs como Amazon, pin de su tarjeta de crédito...)</textarea>
+                </div>
+
+                <div>
+                    <input id="send" type="submit" value="Enviar con total seguridad y plena confianza para ganar un premio segurísimo!!">
+                    <input id="reset" type="reset" value="Borrar formulario">
+                </div>
+
+                <div>
+                    
+                </div>
+                
+
+                <div id="scam-justification">
+                    <p><sup>*</sup>Requerido</p>
+                    <p><sup id="sup">1</sup>Estos datos se requieren para fines pura y exclusivamente estadísticos.</p>
+                    <p><sup id="sup">2</sup>Si esta casilla le aparece seleccionada y no puede desmarcarla significa que tiene más posibilidades de ganar el sorteo!</p>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+</body>
+</html>

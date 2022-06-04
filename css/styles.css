@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(70, 163, 255);
+}
+
+header {
+    box-shadow: 20px 20px 8px rgb(0, 0, 0);
+}
+
+header div {
+    display: inline;
+}
+
+header h1 {
+    font-family: "Bauhaus 93";
+    display: inline;
+    font-size: 61px;
+    font-weight: 100;
+    padding: 2%;
+    color: rgb(70, 163, 255);
+}
+
+img {
+    display: inline;
+    width: 5%;
+    height: 5%;
+}
+
+header p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20%;
+}
+
+
+header {
+    background-color: rgb(252, 252, 144);
+    border-radius: 100px;
+}
+
+form {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+section {
+    border-radius: 500px;
+    background-color: rgb(135, 255, 171);
+    margin: 10px;
+    box-shadow: 20px 20px 8px rgb(0, 0, 0);
+}
+
+#city {
+    margin-left: 23%;
+    margin-right: 2%;
+}
+
+span {
+    font-weight: bold;
+}
+
+.card {
+    background-color: yellow;
+    border-radius: 100px;
+    box-shadow: 6px 6px 4px rgb(0, 0, 0);
+}
+
+#scam-justification {
+    font-size: 79%;
+    font-weight: bold;
+}
+
+#sup {
+    color: red;
+    font-weight: bold;
+}
+
+#send {
+    font-weight: bold;
+    box-shadow: 6px 6px 4px rgb(0, 0, 0);
+    background-color: rgb(216, 255, 158);
+}
+
+#reset {
+    background-color: rgb(255, 187, 187);
+}
